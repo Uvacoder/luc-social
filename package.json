@@ -5,7 +5,7 @@
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "dev": "parcel src/index.html",
-        "build": "parcel build src/index.html --public-url https://luc.community",
+        "build": "parcel build src/index.html --public-url https://luc.social",
         "lint": "eslint -c .eslintrc.json --ext .ts ./src"
     },
     "keywords": [],
