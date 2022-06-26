@@ -20,6 +20,10 @@ module.exports = {
                     1: '#f30005',
                     2: '#ba00af',
                 },
+                telegram: {
+                    1: '#2AABEE',
+                    2: '#229ED9',
+                },
                 neutral: {
                     900: '#121212',
                 },
