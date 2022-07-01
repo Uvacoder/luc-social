@@ -24,7 +24,7 @@ jobs:
       - name: Edgeserver Upload
         uses: lvkdotsh/edgeserver-action@v0.0.12
         with:
-          app_id: 60377749054820352
+          app_id: '60377749054820352'
           server: https://signal.lvksh.cloud
           token: ${{ secrets.SIGNAL_TOKEN }}
           directory: dist
