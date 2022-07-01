@@ -17,10 +17,6 @@ jobs:
       - run: yarn
       - name: Build
         run: yarn build
-      # - uses: vimtor/action-zip@v1
-      #   with:
-      #     files: dist/
-      #     dest: result.zip
       - name: Edgeserver Upload
         uses: lvkdotsh/edgeserver-action@v0.0.31
         with:
@@ -28,10 +24,3 @@ jobs:
           server: https://signal.lvksh.cloud
           token: ${{ secrets.SIGNAL_TOKEN }}
           directory: dist
-      # - name: Deploy Stage
-      #   uses: fjogeleit/http-request-action@master
-      #   with:
-      #     url: "https://signal.lvksh.cloud/deployments/push?site=60377749054820352"
-      #     method: "PUT"
-      #     bearerToken: ${{ secrets.SIGNAL_TOKEN }}
-      #     files: '{ "data": "${{ github.workspace }}/result.zip" }'
