@@ -21,6 +21,6 @@ jobs:
         uses: lvkdotsh/edgeserver-action@v0.0.34
         with:
           app_id: '60377749054820352'
-          server: https://signal.lvksh.cloud
+          server: https://api.edgeserver.io
           token: ${{ secrets.SIGNAL_TOKEN }}
           directory: dist
